@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RISING Arts provides professional wall painting, outdoor hoarding fabrication, flex fitting, vinyl boards, scaffolding and advertising services across Tamil Nadu.">
+<title>RISING Arts | Wall Painting Advertising Company</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --orange: #E07B39;
+  --orange-dark: #C0621F;
+  --navy: #0D1B2A;
+  --navy-mid: #1A2F45;
+  --navy-light: #243B53;
+  --gold: #F5A623;
+  --off-white: #F4F7FB;
+  --light-bg: #EBF0F7;
+  --white: #FFFFFF;
+  --text-muted: #8A9AB0;
+  --border: rgba(255,255,255,0.1);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--off-white);
+  color: var(--navy);
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 6%;
+  height: 68px;
+  border-bottom: 3px solid var(--orange);
+}
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem; letter-spacing: 3px;
+  color: var(--white); text-decoration: none;
+}
+.nav-logo span { color: var(--orange); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none; font-size: 0.8rem;
+  font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--orange); }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex; align-items: center;
+  padding: 68px 6% 0;
+  position: relative; overflow: hidden;
+}
+.hero-watermark {
+  position: absolute; top: 50%; right: -2%;
+  transform: translateY(-50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(100px, 18vw, 220px);
+  color: rgba(255,255,255,0.025);
+  letter-spacing: 8px;
+  pointer-events: none; user-select: none;
+  white-space: nowrap;
+}
+.hero-accent-bar {
+  position: absolute; top: 0; right: 0;
+  width: 6px; height: 100%;
+  background: var(--orange);
+}
+.hero-inner {
+  position: relative; z-index: 2;
+  max-width: 680px;
+  padding: 80px 0 160px;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(224,123,57,0.15);
+  border: 1px solid rgba(224,123,57,0.4);
+  color: var(--orange);
+  font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  padding: 7px 16px; border-radius: 100px;
+  margin-bottom: 1.8rem;
+}
+.hero-badge::before {
+  content: '';
+  width: 7px; height: 7px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(64px, 11vw, 130px);
+  color: var(--white);
+  line-height: 0.88;
+  letter-spacing: 4px;
+  margin-bottom: 1.6rem;
+}
+.hero-title .accent { color: var(--orange); }
+.hero-title .italic-line {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 0.75em;
+  letter-spacing: 0;
+}
+.hero-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem; line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
+.btn-solid {
+  background: var(--orange); color: var(--white);
+  padding: 15px 36px; border-radius: 4px;
+  font-weight: 700; font-size: 0.88rem;
+  text-decoration: none; letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-solid:hover { background: var(--orange-dark); transform: translateY(-2px); }
+.btn-ghost {
+  border: 2px solid rgba(255,255,255,0.2); color: var(--white);
+  padding: 15px 36px; border-radius: 4px;
+  font-weight: 500; font-size: 0.88rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.15s;
+}
+.btn-ghost:hover { border-color: var(--gold); transform: translateY(-2px); }
+.hero-stats {
+  display: flex; gap: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.hstat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.4rem; color: var(--orange); line-height: 1;
+}
+.hstat-label {
+  font-size: 0.7rem; color: var(--text-muted);
+  letter-spacing: 1.5px; text-transform: uppercase;
+  margin-top: 3px;
+}
+
+/* ── ABOUT STRIP ── */
+.about-strip {
+  background: var(--navy-mid);
+  padding: 52px 6%;
+  display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;
+}
+.about-initials {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem; color: var(--orange);
+  line-height: 1; flex-shrink: 0;
+  border-right: 3px solid rgba(224,123,57,0.3);
+  padding-right: 3rem;
+}
+.about-text {
+  color: rgba(255,255,255,0.65);
+  font-size: 1rem; line-height: 1.85;
+  max-width: 680px;
+}
+.about-text strong { color: var(--white); }
+
+/* ── SECTION COMMONS ── */
+.section { padding: 90px 6%; }
+.sec-label {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--orange);
+  margin-bottom: 0.6rem;
+}
+.sec-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.0; letter-spacing: 2px;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+.sec-title.light { color: var(--white); }
+.sec-desc {
+  color: #6B7D93; font-size: 1rem; line-height: 1.8;
+  max-width: 520px;
+}
+
+/* ── SERVICES ── */
+.services-bg { background: var(--light-bg); }
+.services-head { margin-bottom: 3rem; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: #D0D9E6;
+  border: 2px solid #D0D9E6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.svc-card {
+  background: var(--white);
+  padding: 2.2rem;
+  transition: background 0.25s, transform 0.2s;
+  position: relative; overflow: hidden;
+}
+.svc-card::after {
+  content: '';
+  position: absolute; left: 0; bottom: 0;
+  width: 0; height: 3px;
+  background: var(--orange);
+  transition: width 0.3s ease;
+}
+.svc-card:hover { background: var(--navy); }
+.svc-card:hover .svc-n,
+.svc-card:hover .svc-t,
+.svc-card:hover .svc-d { color: var(--white); }
+.svc-card:hover .svc-n { color: rgba(255,255,255,0.15); }
+.svc-card:hover::after { width: 100%; }
+.svc-n {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem; color: #DDE4EE;
+  line-height: 1; margin-bottom: 0.9rem;
+  transition: color 0.25s;
+}
+.svc-t {
+  font-size: 1.05rem; font-weight: 600; color: var(--navy);
+  margin-bottom: 0.5rem; transition: color 0.25s;
+}
+.svc-d {
+  font-size: 0.85rem; color: #7A8EA5;
+  line-height: 1.7; transition: color 0.25s;
+}
+
+/* ── PROCESS ── */
+.process-bg { background: var(--off-white); }
+.process-head { margin-bottom: 3rem; }
+.process-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.proc-step {
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  border-right: 1px solid #D0D9E6;
+  margin-right: 2.5rem;
+}
+.proc-step:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+.proc-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem; color: var(--orange);
+  opacity: 0.5; line-height: 1; margin-bottom: 0.7rem;
+}
+.proc-t { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+.proc-d { font-size: 0.87rem; color: #6B7D93; line-height: 1.75; }
+
+/* ── LOCATION ── */
+.loc-strip {
+  background: var(--orange);
+  padding: 44px 6%;
+  display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+}
+.loc-icon-wrap {
+  width: 52px; height: 52px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; flex-shrink: 0;
+}
+.loc-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem; color: var(--white);
+  letter-spacing: 1.5px; margin-bottom: 4px;
+}
+.loc-sub { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+
+/* ── CONTACT ── */
+.contact-bg { background: var(--navy); }
+.contact-head { margin-bottom: 2.5rem; }
+.contact-head .sec-desc { color: rgba(255,255,255,0.5); }
+.contact-cards {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.c-card {
+  flex: 1; min-width: 240px;
+  background: var(--navy-light);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 2rem 2.2rem;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+.c-card:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  transform: translateY(-4px);
+}
+.c-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem; color: var(--white);
+  letter-spacing: 1px; margin-bottom: 0.3rem;
+}
+.c-phone {
+  font-size: 1.15rem; font-weight: 700; color: var(--gold);
+  transition: color 0.2s;
+}
+.c-card:hover .c-phone { color: var(--white); }
+.c-tap { font-size: 0.72rem; color: rgba(255,255,255,0.35); letter-spacing: 1px; margin-top: 6px; }
+.c-card:hover .c-tap { color: rgba(255,255,255,0.7); }
+.addr-box {
+  display: flex; align-items: flex-start; gap: 1.2rem;
+  background: var(--navy-light);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 1.4rem 1.8rem;
+  max-width: 400px;
+}
+.addr-ico { font-size: 1.4rem; margin-top: 2px; flex-shrink: 0; }
+.addr-lbl { font-size: 0.67rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
+.addr-val { color: rgba(255,255,255,0.7); font-size: 0.92rem; line-height: 1.65; }
+
+/* ── FOOTER ── */
+footer {
+  background: #08121C;
+  padding: 36px 6%;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1.2rem;
+  border-top: 3px solid var(--orange);
+}
+.f-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem; color: var(--white); letter-spacing: 2px;
+}
+.f-logo span { color: var(--orange); }
+.f-tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-size: 0.85rem; color: #4A5E72;
+  margin-top: 3px;
+}
+.f-pills { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+.f-pill {
+  background: rgba(255,255,255,0.06);
+  padding: 5px 14px; border-radius: 20px;
+  font-size: 0.72rem; color: #4A5E72;
+}
+.f-top {
+  color: var(--orange); text-decoration: none;
+  font-size: 0.78rem; letter-spacing: 1.5px;
+  font-weight: 700; text-transform: uppercase;
+}
+.f-top:hover { color: var(--gold); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .process-row { grid-template-columns: 1fr; }
+  .proc-step { border-right: none; border-bottom: 1px solid #D0D9E6; padding: 2rem 0; margin-right: 0; }
+  .proc-step:last-child { border-bottom: none; }
+  .hero-stats { gap: 1.8rem; }
+  .about-initials { border-right: none; padding-right: 0; border-bottom: 2px solid rgba(224,123,57,0.3); padding-bottom: 1rem; }
+}
+@media (max-width: 520px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hero-inner { padding-bottom: 100px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero"><span>RISING</span> Arts</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-watermark">RISING ARTS</div>
+  <div class="hero-accent-bar"></div>
+  <div class="hero-inner">
+    <span class="hero-badge">All Over Tamil Nadu</span>
+    <h1 class="hero-title">
+      <span class="accent">RISING</span><br>
+      <span class="italic-line">Arts</span>
+    </h1>
+    <p class="hero-desc">Wall paintings, hoardings, flex fitting, vinyl boards and scaffold-supported advertising displays — built for bold visibility across Tamil Nadu.</p>
+    <div class="hero-actions">
+      <a href="tel:+919443283781" class="btn-solid">📞 Call Now</a>
+      <a href="#services" class="btn-ghost">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hstat-num">5B</div>
+        <div class="hstat-label">Ganesh Complex</div>
+      </div>
+      <div>
+        <div class="hstat-num">TN</div>
+        <div class="hstat-label">State-wide Coverage</div>
+      </div>
+      <div>
+        <div class="hstat-num">6+</div>
+        <div class="hstat-label">Services Offered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div class="about-strip">
+  <div class="about-initials">RA</div>
+  <p class="about-text">
+    <strong>RISING Arts</strong> is an outdoor advertising company based at <strong>Tirunelveli Junction</strong>. We deliver high-impact wall paintings, hoarding fabrication, flex fitting, vinyl boards and scaffolding-supported advertising for shops, brands and campaigns — with clean finishing and dependable on-site execution across Tamil Nadu.
+  </p>
+</div>
+
+<!-- SERVICES -->
+<section class="section services-bg" id="services">
+  <div class="services-head">
+    <p class="sec-label">What We Do</p>
+    <h2 class="sec-title">Everything for Outdoor<br>Brand Promotion</h2>
+    <p class="sec-desc">From wall branding to outdoor display boards — practical advertising with clean finishing, strong readability and dependable installation.</p>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card">
+      <div class="svc-n">01</div>
+      <div class="svc-t">Wall Painting</div>
+      <p class="svc-d">Large format hand-painted advertising on exterior walls with bold color, clear lettering and long-distance visibility.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-n">02</div>
+      <div class="svc-t">Outdoor Hoarding Fabrication</div>
+      <p class="svc-d">Fabrication support for outdoor hoardings, display structures and roadside advertisement boards.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-n">03</div>
+      <div class="svc-t">Flex Fitting</div>
+      <p class="svc-d">Professional fitting for flex banners and display materials used in shopfronts, promotions and public campaigns.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-n">04</div>
+      <div class="svc-t">Vinyl Board</div>
+      <p class="svc-d">Vinyl board preparation and installation for clean, durable and professional business advertisements.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-n">05</div>
+      <div class="svc-t">Scaffolding Support</div>
+      <p class="svc-d">Scaffolding-assisted work for higher walls, larger surfaces and secure outdoor painting or fitting jobs.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-n">06</div>
+      <div class="svc-t">Custom Advertisements</div>
+      <p class="svc-d">Tailored solutions for local shops, events, product launches, brand campaigns and public notices.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process-bg" id="process">
+  <div class="process-head">
+    <p class="sec-label">How We Work</p>
+    <h2 class="sec-title">From Site Visit to<br>Finished Display</h2>
+  </div>
+  <div class="process-row">
+    <div class="proc-step">
+      <div class="proc-num">01</div>
+      <div class="proc-t">Measure &amp; Plan</div>
+      <p class="proc-d">We assess the location, wall size, display needs and visibility requirements on-site before anything begins.</p>
+    </div>
+    <div class="proc-step">
+      <div class="proc-num">02</div>
+      <div class="proc-t">Prepare Artwork</div>
+      <p class="proc-d">Color, text layout and material choices are planned and finalized for maximum outdoor readability.</p>
+    </div>
+    <div class="proc-step">
+      <div class="proc-num">03</div>
+      <div class="proc-t">Install &amp; Finish</div>
+      <p class="proc-d">The team completes painting, fitting or fabrication with neat, professional on-site finishing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION STRIP -->
+<div class="loc-strip">
+  <div class="loc-icon-wrap">📍</div>
+  <div>
+    <div class="loc-title">5B, Ganesh Complex, Tirunelveli Junction</div>
+    <div class="loc-sub">Serving businesses across Tirunelveli and all of Tamil Nadu</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section contact-bg" id="contact">
+  <div class="contact-head">
+    <p class="sec-label">Get In Touch</p>
+    <h2 class="sec-title light">Discuss Your Advertising<br>Requirement</h2>
+    <p class="sec-desc">Reach RISING Arts for wall painting, flex fitting, vinyl board, hoarding fabrication, scaffolding and custom advertisement work across Tamil Nadu.</p>
+  </div>
+  <div class="contact-cards">
+    <a href="tel:+919443283781" class="c-card">
+      <div class="c-name">B.S. Velayutham</div>
+      <div class="c-phone">94432 83781</div>
+      <div class="c-tap">Tap to call</div>
+    </a>
+    <a href="tel:+919626264597" class="c-card">
+      <div class="c-name">R. Selvaraj</div>
+      <div class="c-phone">96262 64597</div>
+      <div class="c-tap">Tap to call</div>
+    </a>
+  </div>
+  <div class="addr-box">
+    <div class="addr-ico">🏢</div>
+    <div>
+      <div class="addr-lbl">Office Address</div>
+      <div class="addr-val">5B, Ganesh Complex<br>Tirunelveli Junction, Tamil Nadu</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-logo"><span>RISING</span> Arts</div>
+    <div class="f-tagline">"Visible from far. Finished with care."</div>
+  </div>
+  <div class="f-pills">
+    <span class="f-pill">Wall Painting</span>
+    <span class="f-pill">Hoarding</span>
+    <span class="f-pill">Flex Fitting</span>
+    <span class="f-pill">Vinyl Board</span>
+  </div>
+  <a href="#hero" class="f-top">↑ Top</a>
+</footer>
+
+</body>
+</html>
