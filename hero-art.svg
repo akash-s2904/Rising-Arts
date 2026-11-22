@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" role="img" aria-label="A Rising Arts painter on scaffolding hand-painting a large advertisement on a wall">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22405E"/><stop offset="1" stop-color="#0D1B2A"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1E7D6"/><stop offset="1" stop-color="#DCCBAF"/>
+    </linearGradient>
+    <linearGradient id="paint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F08A44"/><stop offset="1" stop-color="#D9662A"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="520" height="440" rx="22"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- sky -->
+    <rect width="520" height="440" fill="url(#sky)"/>
+    <circle cx="470" cy="46" r="26" fill="#F5A623" opacity=".85"/>
+    <path d="M0 60 Q60 40 120 55 T240 50 T360 58 T520 48 V70 H0Z" fill="#1A2F45" opacity=".7"/>
+
+    <!-- wall -->
+    <rect x="0" y="62" width="520" height="322" fill="url(#wall)"/>
+    <rect x="0" y="62" width="520" height="10" fill="#C2AE8E"/>
+    <g stroke="#CDBB9C" stroke-width="1.2" opacity=".7">
+      <path d="M0 130H520M0 200H520M0 270H520M0 340H520"/>
+      <path d="M90 72V130M260 72V130M430 72V130M170 130V200M350 130V200M90 200V270M260 200V270M430 200V270M170 270V340M350 270V340M90 340V384M260 340V384M430 340V384"/>
+    </g>
+    <rect x="0" y="62" width="520" height="322" fill="url(#fade)"/>
+
+    <!-- ===== the advertisement being painted (brand lettering left as blank blocks) ===== -->
+    <!-- finished part -->
+    <rect x="34" y="92" width="268" height="236" rx="4" fill="url(#paint)"/>
+    <rect x="34" y="92" width="268" height="58" rx="4" fill="#0D1B2A"/>
+    <!-- blank "brand name" blocks: unreadable on purpose -->
+    <g fill="#F7F1E6">
+      <rect x="52" y="108" width="62" height="26" rx="6"/>
+      <rect x="122" y="108" width="40" height="26" rx="6"/>
+      <rect x="170" y="108" width="88" height="26" rx="6"/>
+      <rect x="266" y="108" width="36" height="26" rx="6"/>
+    </g>
+    <!-- product shape -->
+    <circle cx="104" cy="226" r="56" fill="#F5A623"/>
+    <circle cx="104" cy="226" r="40" fill="#0D1B2A"/>
+    <circle cx="104" cy="226" r="22" fill="#F7F1E6"/>
+    <path d="M82 226a22 22 0 0 1 22-22" stroke="#E07B39" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- blank text lines -->
+    <g fill="#0D1B2A">
+      <rect x="178" y="178" width="110" height="14" rx="7"/>
+      <rect x="178" y="202" width="80" height="14" rx="7"/>
+      <rect x="178" y="226" width="98" height="14" rx="7"/>
+    </g>
+    <rect x="178" y="256" width="82" height="22" rx="11" fill="#F7F1E6"/>
+    <!-- bottom band -->
+    <rect x="34" y="296" width="268" height="32" fill="#0D1B2A"/>
+    <g fill="#F5A623"><rect x="52" y="307" width="54" height="10" rx="5"/><rect x="114" y="307" width="36" height="10" rx="5"/><rect x="158" y="307" width="64" height="10" rx="5"/></g>
+    <!-- drips -->
+    <g fill="#D9662A">
+      <path d="M70 328v10a4 4 0 0 0 8 0v-10z"/><path d="M196 328v16a4 4 0 0 0 8 0v-16z"/><path d="M262 328v7a3.5 3.5 0 0 0 7 0v-7z"/>
+    </g>
+
+    <!-- unpainted part: pencil sketch still to be filled -->
+    <g fill="none" stroke="#8E7E62" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round">
+      <path d="M302 92H372V328H302"/>
+      <path d="M302 150H372"/>
+      <rect x="310" y="108" width="48" height="26" rx="6"/>
+      <rect x="296" y="178" width="58" height="14" rx="7"/>
+      <rect x="296" y="226" width="40" height="14" rx="7"/>
+      <path d="M302 296H372"/>
+    </g>
+    <!-- fresh wet edge where the brush is working -->
+    <path d="M300 150h12c4 5-3 9 1 14s-4 8 0 13 -3 7 1 11h-14z" fill="#E9763A"/>
+    <path d="M308 188v9a3 3 0 0 0 6 0v-9z" fill="#E9763A"/>
+
+    <!-- ===== scaffolding ===== -->
+    <g stroke="#7E8FA6" stroke-width="7" stroke-linecap="round">
+      <path d="M346 86V396M486 86V396"/>
+      <path d="M346 160H486M346 360H486"/>
+    </g>
+    <g stroke="#6A7A90" stroke-width="5" stroke-linecap="round">
+      <path d="M346 160L486 268M346 268L486 360"/>
+    </g>
+    <!-- plank -->
+    <rect x="334" y="262" width="166" height="12" rx="3" fill="#B7793E"/>
+    <rect x="334" y="270" width="166" height="4" fill="#8F5B2B"/>
+
+    <!-- paint bucket on plank -->
+    <path d="M452 236h26l-3 26h-20z" fill="#E7EDF4"/>
+    <rect x="451" y="232" width="28" height="6" rx="2" fill="#C9D3DF"/>
+    <path d="M452 236c4-18 22-18 26 0" stroke="#7E8FA6" stroke-width="2" fill="none"/>
+    <path d="M455 238h20v6c-3 4-6-2-9 2s-6-1-11 0z" fill="#E07B39"/>
+
+    <!-- ===== painter (facing the wall) ===== -->
+    <!-- back leg -->
+    <path d="M396 208l6 52h-12l-4-50z" fill="#1A2F45"/>
+    <!-- front leg -->
+    <path d="M382 208l-6 52h12l8-50z" fill="#243B53"/>
+    <!-- shoes -->
+    <path d="M372 257h18v6h-22a4 4 0 0 1 4-6z" fill="#101820"/>
+    <path d="M388 257h16v6h-20a4 4 0 0 1 4-6z" fill="#101820"/>
+    <!-- torso (work shirt) -->
+    <path d="M377 166c6-5 22-5 28 1l3 44c-10 5-26 5-36 0z" fill="#2F7DBF"/>
+    <path d="M391 167v42" stroke="#25679F" stroke-width="2"/>
+    <!-- paint splashes on shirt -->
+    <circle cx="384" cy="196" r="2.5" fill="#F5A623"/><circle cx="398" cy="184" r="2" fill="#E07B39"/>
+    <!-- back arm holding paint tin -->
+    <path d="M401 172q12 14 10 30" stroke="#2F7DBF" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <circle cx="411" cy="205" r="5" fill="#9A5B36"/>
+    <rect x="405" y="208" width="15" height="17" rx="2" fill="#E7EDF4"/>
+    <rect x="405" y="208" width="15" height="5" fill="#E07B39"/>
+    <!-- raised painting arm -->
+    <path d="M380 174L360 160" stroke="#2F7DBF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M360 160L340 144" stroke="#9A5B36" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="338" cy="143" r="5.5" fill="#9A5B36"/>
+    <!-- brush -->
+    <path d="M338 143L316 160" stroke="#C98B4B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M318 155l-9 7 5 6 9-7z" fill="#5A6472"/>
+    <path d="M309 162l-6 5 5 6 6-5z" fill="#E07B39"/>
+    <!-- head -->
+    <rect x="386" y="152" width="9" height="10" rx="3" fill="#9A5B36"/>
+    <circle cx="390" cy="143" r="14" fill="#A8663E"/>
+    <path d="M396 140a6 6 0 0 1 6 9" stroke="#1B1B1B" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- cap -->
+    <path d="M376 141a14 14 0 0 1 28 0z" fill="#F5A623"/>
+    <path d="M378 140h-14a3 3 0 0 0 0 5h16z" fill="#E08E12"/>
+
+    <!-- ===== ground ===== -->
+    <rect x="0" y="384" width="520" height="56" fill="#0A1520"/>
+    <rect x="0" y="382" width="520" height="4" fill="#E07B39"/>
+    <!-- paint cans on ground -->
+    <g>
+      <rect x="40" y="356" width="26" height="30" rx="3" fill="#E7EDF4"/><rect x="40" y="356" width="26" height="8" fill="#0D1B2A"/>
+      <rect x="70" y="364" width="22" height="22" rx="3" fill="#E7EDF4"/><rect x="70" y="364" width="22" height="7" fill="#F5A623"/>
+      <rect x="96" y="368" width="34" height="8" rx="2" fill="#5A6472" transform="rotate(-8 113 372)"/>
+    </g>
+  </g>
+</svg>
